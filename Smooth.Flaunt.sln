@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smooth.Flaunt.Server", "Server\Smooth.Flaunt.Server.csproj", "{DC8C3AFF-0938-4BFD-9521-F12976BD3F72}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0BA1CCF9-3E28-49C9-92D1-900B91BE7B26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smooth.Flaunt.Client", "Client\Smooth.Flaunt.Client.csproj", "{40126D1E-522C-43E4-9174-BC3B402A533E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smooth.Flaunt.Server", "src\Smooth.Client.Server\Smooth.Flaunt.Server.csproj", "{F62C5593-69A1-444D-B248-9C0D82665655}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smooth.Flaunt.Shared", "Shared\Smooth.Flaunt.Shared.csproj", "{FF47CE16-97B9-475A-936A-46B98CA350F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smooth.Flaunt.Shared", "src\Smooth.Client.Shared\Smooth.Flaunt.Shared.csproj", "{C8CA164F-FDB2-4744-AD37-2EBFF40EF492}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smooth.Flaunt.Client", "src\Smooth.Flaunt.Client\Smooth.Flaunt.Client.csproj", "{D97FAFC7-B508-4425-8AD7-6C364F99130D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,21 +17,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DC8C3AFF-0938-4BFD-9521-F12976BD3F72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC8C3AFF-0938-4BFD-9521-F12976BD3F72}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC8C3AFF-0938-4BFD-9521-F12976BD3F72}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC8C3AFF-0938-4BFD-9521-F12976BD3F72}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40126D1E-522C-43E4-9174-BC3B402A533E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40126D1E-522C-43E4-9174-BC3B402A533E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40126D1E-522C-43E4-9174-BC3B402A533E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40126D1E-522C-43E4-9174-BC3B402A533E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FF47CE16-97B9-475A-936A-46B98CA350F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FF47CE16-97B9-475A-936A-46B98CA350F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FF47CE16-97B9-475A-936A-46B98CA350F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FF47CE16-97B9-475A-936A-46B98CA350F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F62C5593-69A1-444D-B248-9C0D82665655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F62C5593-69A1-444D-B248-9C0D82665655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F62C5593-69A1-444D-B248-9C0D82665655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F62C5593-69A1-444D-B248-9C0D82665655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8CA164F-FDB2-4744-AD37-2EBFF40EF492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8CA164F-FDB2-4744-AD37-2EBFF40EF492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8CA164F-FDB2-4744-AD37-2EBFF40EF492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8CA164F-FDB2-4744-AD37-2EBFF40EF492}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D97FAFC7-B508-4425-8AD7-6C364F99130D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D97FAFC7-B508-4425-8AD7-6C364F99130D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D97FAFC7-B508-4425-8AD7-6C364F99130D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D97FAFC7-B508-4425-8AD7-6C364F99130D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F62C5593-69A1-444D-B248-9C0D82665655} = {0BA1CCF9-3E28-49C9-92D1-900B91BE7B26}
+		{C8CA164F-FDB2-4744-AD37-2EBFF40EF492} = {0BA1CCF9-3E28-49C9-92D1-900B91BE7B26}
+		{D97FAFC7-B508-4425-8AD7-6C364F99130D} = {0BA1CCF9-3E28-49C9-92D1-900B91BE7B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CF788E17-7662-4959-99F1-4CECF326D8AD}
