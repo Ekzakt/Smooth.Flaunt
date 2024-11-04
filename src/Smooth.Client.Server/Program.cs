@@ -44,8 +44,7 @@ builder.Services.AddAuthentication(options =>
     })
     .AddOpenIdConnect("oidc", options =>
     {
-        options.Authority = "https://identity.smooth.local";
-
+        options.Authority = builder.Configuration["IdentityServer:Authority"];
         options.ClientId = builder.Configuration["IdentityServer:ClientId"];
         options.ClientSecret = builder.Configuration["IdentityServer:ClientSecret"];
         options.ResponseType = OpenIdConnectResponseType.Code;
